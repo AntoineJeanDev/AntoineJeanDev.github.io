@@ -224,6 +224,8 @@ html {
 }
 
 footer {
-  margin-top: 150px;
+  padding-top: 150px;
   padding: 50px 0;
+  color: white;
+  background-color: #41474a;
 }
