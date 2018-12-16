@@ -96,13 +96,15 @@ html {
 
 .mheader {
   display: table;
-  height: 100%;
+  height: auto;
   width: 100%;
+  padding: 200px 0;
   text-align: center;
-  background-image: url(./res/bg-top.jpeg);
+  /* background-image: url(./res/bg-top.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top; */
+  background: url("./res/bg-top.jpeg") no-repeat bottom center scroll;
 }
 
 .mheader .iheader {
