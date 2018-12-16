@@ -185,6 +185,16 @@ html {
   border-bottom: white solid 2px;
 }
 
+#education {
+  background: url("./res/gray-bg.jpg") no-repeat bottom center scroll;
+  background-size: cover;
+}
+
+#networks {
+  background: url("./res/gray-footer.jpg") no-repeat bottom center scroll;
+  background-size: cover;
+}
+
 .skill-node {
   color: white;
   margin-bottom: 50px;
@@ -224,8 +234,8 @@ html {
 }
 
 footer {
-  padding-top: 150px;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
   color: white;
   background-color: #41474a;
 }
