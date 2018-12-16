@@ -147,7 +147,9 @@ html {
 }
 
 .content-section-grey {
-  background-color: #616161;
+  background-color: #41474a;
+  /* old grey */
+  /*  #616161; */
 }
 
 .content-section-black,
@@ -203,6 +205,10 @@ html {
 .experience-card {
   margin-bottom: 10px;
   text-align: start;
+}
+
+.card-subtitle {
+  font-size: smaller;
 }
 
 .netB:hover,
