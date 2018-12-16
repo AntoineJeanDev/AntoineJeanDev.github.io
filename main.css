@@ -142,6 +142,14 @@ html {
   }
 }
 
+.content-section-black {
+  background-color: black;
+}
+
+.content-section-grey {
+  background-color: #616161;
+}
+
 .content-section-black,
 .content-section-grey {
   padding-top: 150px;
@@ -192,17 +200,19 @@ html {
   text-align: start;
 }
 
-#education {
-  background-color: #616161;
-  padding-bottom: 100px;
-}
-
 .experience-card {
   margin-bottom: 10px;
   text-align: start;
 }
 
+.netB:hover,
+.netB:active {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+}
+
 footer {
-  margin-top: 200px;
+  margin-top: 150px;
   padding: 50px 0;
 }
