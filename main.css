@@ -234,8 +234,11 @@ html {
 }
 
 footer {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
   color: white;
-  background-color: #41474a;
+  /* background-color: #41474a; */
+  background: transparent;
+  position: relative;
+  top: -100px;
 }
