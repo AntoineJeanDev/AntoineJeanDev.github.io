@@ -191,7 +191,7 @@ html {
 }
 
 #networks {
-  background: url("./res/gray-footer.jpg") no-repeat bottom center scroll;
+  background: url("./res/gray-footer-blur.jpg") no-repeat bottom center scroll;
   background-size: cover;
 }
 
@@ -221,12 +221,12 @@ html {
   font-size: smaller;
 }
 
-.netB:hover,
+/* .netB:hover,
 .netB:active {
   color: black;
   background-color: white;
   border: 1px solid white;
-}
+} */
 
 .mail a {
   font-weight: bold;
