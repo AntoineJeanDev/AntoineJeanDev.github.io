@@ -221,16 +221,13 @@ html {
   font-size: smaller;
 }
 
-/* .netB:hover,
-.netB:active {
-  color: black;
-  background-color: white;
-  border: 1px solid white;
-} */
-
-.mail a {
-  font-weight: bold;
+.netB:hover,
+.netB:active,
+.contactB:hover,
+.contactB:active {
   color: white;
+  background-color: black;
+  border: 1px solid black;
 }
 
 footer {
