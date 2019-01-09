@@ -126,6 +126,12 @@ html {
   font-size: 18px;
 }
 
+.hintronews {
+  border-bottom: solid white 1px;
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
+
 @media (min-width: 768px) {
   .mheader {
     height: 100%;
