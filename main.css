@@ -1,6 +1,7 @@
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   position: relative;
+  margin: 0;
   width: 100%;
   height: 100%;
   background-color: black;
@@ -18,7 +19,8 @@ html {
 
 #mainNav {
   text-transform: uppercase;
-  font-family: Cabin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* font-family: Cabin, 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+  font-family: 'Roboto Condensed', sans-serif;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   background-color: black;
 }
@@ -49,7 +51,7 @@ html {
   background-color: transparent;
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   #mainNav {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -126,6 +128,11 @@ html {
   font-size: 18px;
 }
 
+.mheader a {
+  color: white;
+  font-weight: bold;
+}
+
 .hintronews {
   border-bottom: solid white 1px;
   border-radius: 10px;
@@ -168,7 +175,7 @@ html {
   padding-bottom: 150px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 
   .content-section-black,
   .content-section-grey {
@@ -196,6 +203,14 @@ html {
   border-bottom: white solid 2px;
 } */
 
+section h2 {
+  text-align: center;
+}
+
+.section-link {
+  text-align: center;
+}
+
 #education {
   background: url("./res/gray-bg.jpg") no-repeat bottom center scroll;
   background-size: cover;
@@ -213,6 +228,7 @@ html {
 
 .skill-node h3 {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .skill {
@@ -220,7 +236,11 @@ html {
 }
 
 .skill h4 {
-  text-align: start;
+  margin-bottom: 0;
+}
+
+.progress {
+  height: 20px;
 }
 
 .experience-card {
@@ -255,16 +275,15 @@ footer {
 /* scroll bar css */
 
 ::-webkit-scrollbar {
-  background: #ddd;
-  width: 14px;
+  width: 5px;
 }
 
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 10px #00000070;
-  border-radius: 10px;
+@media only screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
 }
 
 ::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 10px;
+  background-color: hsla(0, 0%, 100%, 0.5);
 }
