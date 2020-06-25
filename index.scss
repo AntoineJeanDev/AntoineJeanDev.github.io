@@ -1,0 +1,293 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+#mainNav {
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: black;
+
+  .navbar-brand {
+    font-weight: 700;
+  }
+
+  a {
+    color: white;
+  }
+
+  .navbar-nav .nav-item {
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+      color: fade(white, 80%);
+      outline: none;
+      background-color: transparent;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      background-color: transparent;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #mainNav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    letter-spacing: 1px;
+    border-bottom: none;
+    background: transparent;
+
+    &.navbar-shrink {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      background: black;
+    }
+
+    .nav-link.active {
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .nav-link {
+    &.active {
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.btn-down {
+  color: white;
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  margin-top: 15px;
+  line-height: 45px;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  background: transparent;
+
+  &:focus,
+  &:hover {
+    color: white;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.mheader {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  color: white;
+  text-align: center;
+  /* background-image: url(./res/bg-top.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top; */
+  background: url("./res/bg-top.jpeg") no-repeat bottom center scroll;
+  background-size: cover;
+
+  a {
+    color: white;
+    font-weight: bold;
+  }
+
+  .iheader {
+    display: table-cell;
+    vertical-align: middle;
+
+    .htitle {
+      font-size: 50px;
+      text-transform: uppercase;
+    }
+
+    .hintrotext {
+      font-size: 18px;
+    }
+  }
+}
+
+.hintronews {
+  border-bottom: solid white 1px;
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .mheader {
+    height: 100%;
+    padding: 0;
+
+    .iheader {
+      .htitle {
+        font-size: 100px;
+      }
+
+      .hintrotext {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .content-section-black,
+  .content-section-grey {
+    h2 {
+      font-size: 60px;
+    }
+  }
+}
+
+.content-section-black {
+  background-color: black;
+}
+
+.content-section-grey {
+  background-color: #41474a;
+}
+
+.content-section-black,
+.content-section-grey {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+@media (min-width: 768px) {
+
+  .content-section-black,
+  .content-section-grey {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+
+}
+
+.content-section-black h2,
+.content-section-grey h2 {
+  color: white;
+  font-size: 45px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  border-bottom: white solid 2px;
+}
+
+/* .content-section-grey h2 {
+  color: white;
+  font-size: 45px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  border-bottom: white solid 2px;
+} */
+
+section h2 {
+  text-align: center;
+}
+
+.section-link {
+  text-align: center;
+}
+
+#education {
+  background: url("./res/gray-bg.jpg") no-repeat bottom center scroll;
+  background-size: cover;
+}
+
+#networks {
+  background: url("./res/gray-footer-blur.jpg") no-repeat bottom center scroll;
+  background-size: cover;
+}
+
+.skill-node {
+  color: white;
+  margin-bottom: 50px;
+
+  h3 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.skill {
+  margin-bottom: 10px;
+
+  h4 {
+    margin-bottom: 0;
+  }
+}
+
+.progress {
+  height: 20px;
+}
+
+.experience-card {
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.card-subtitle {
+  font-size: smaller;
+}
+
+.netB:hover,
+.netB:active,
+.contactB:hover,
+.contactB:active {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+}
+
+footer {
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  color: white;
+  /* background-color: #41474a; */
+  background: transparent;
+  position: relative;
+  top: -100px;
+}
+
+
+/* scroll bar css */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
